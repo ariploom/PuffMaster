@@ -1,0 +1,24 @@
+{% extends 'control_panel/dashboard.html' %}
+
+{% block form %}
+	<form>
+		<p>
+			<label for="volume"> Puff Volume (cc): </label>
+			<input type="number" name="volume" id="volume" value="55" />
+		</p>
+		<p>
+			<label for="duration"> Puff Duration (sec): </label>
+			<input type="number" name="duration" id="duration" value="3" />
+		</p>
+		<p>
+			<label for="number"> Number of Puffs: </label>
+			<input type="number" name="number" id="number" value="1" />
+		</p>
+		<p>
+			<label for="interval"> Puff Interval (sec): </label>
+			<input type="number" name="interval" id="interval" value="30" />
+		</p>
+		<p>
+			<input type="submit" value="Run" />
+	</form>
+{% endblock %}

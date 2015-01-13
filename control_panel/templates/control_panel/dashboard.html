@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Puff Master Dashboard {% endblock %}
+
+{% block content %}
+	Status: {{ m.status }}
+	<br>
+	Current Sample: {{ m.current_sample }}
+	<br>
+	{% block form %}
+	{% endblock %}
+{% endblock %}
