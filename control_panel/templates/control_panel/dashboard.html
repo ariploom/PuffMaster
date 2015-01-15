@@ -3,10 +3,15 @@
 {% block title %} Puff Master Dashboard {% endblock %}
 
 {% block content %}
-	Status: {{ m.status }}
-	<br>
-	Current Sample: {{ m.current_sample }}
-	<br>
-	{% block form %}
-	{% endblock %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6"> 
+				{% include "control_panel/status.html" %}
+			</div>
+			<div class="col-md-6">
+				{% include "control_panel/new_sample.html" %}
+			<div/>
+			<div class="clearfix visible-md-block"></div>
+		</div>
+	</div>
 {% endblock %}

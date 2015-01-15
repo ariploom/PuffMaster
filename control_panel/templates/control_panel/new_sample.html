@@ -1,24 +1,30 @@
-{% extends 'control_panel/dashboard.html' %}
-
-{% block form %}
-	<form>
-		<p>
-			<label for="volume"> Puff Volume (cc): </label>
-			<input type="number" name="volume" id="volume" value="55" />
-		</p>
-		<p>
-			<label for="duration"> Puff Duration (sec): </label>
-			<input type="number" name="duration" id="duration" value="3" />
-		</p>
-		<p>
-			<label for="number"> Number of Puffs: </label>
-			<input type="number" name="number" id="number" value="1" />
-		</p>
-		<p>
-			<label for="interval"> Puff Interval (sec): </label>
-			<input type="number" name="interval" id="interval" value="30" />
-		</p>
-		<p>
-			<input type="submit" value="Run" />
-	</form>
-{% endblock %}
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title"> Puff Parameters </h3>
+	</div>
+	<div class="panel-body">
+		<form action="https://agent.electricimp.com/0-APkwux2ZAx" method="get">
+			<div class="form-group">
+				<label for="volume"> Puff Volume (cc): </label>
+				<input type="number" name="volume" id="volume" value="55" />
+			</div>
+			<div class="form-group">
+				<label for="duration"> Puff Duration (sec): </label>
+				<input type="number" name="duration" id="duration" value="3" />
+			</div>
+			<div class="form-group">
+				<label for="number"> Number of Puffs: </label>
+				<input type="number" name="number" id="number" value="1" />
+			</div>
+			<div class="form-group">
+				<label for="interval"> Puff Interval (sec): </label>
+				<input type="number" name="interval" id="interval" value="30" />
+			</div>
+			<!-- <div clas="form-group">
+				<label for="led"> LED: </label>
+				<input type="number" name="led" id="led" value="1" />
+			</div> -->
+				<button type="submit" class="btn btn-default"> Run </button>
+		</form>
+	</div>
+</div>

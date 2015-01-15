@@ -1,0 +1,13 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title"> Machine Status </h3>
+	</div>
+	<div class="panel-body">
+		Status: {{ m.status }}
+		<br>
+		Current Sample: {{ m.current_sample }}
+		<br>
+		{% block form %}
+		{% endblock %}
+	</div>
+</div>

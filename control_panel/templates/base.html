@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>
-			{% block title %}{% endblock %}
-		</title>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title> {% block title %}{% endblock %} </title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<style type="text/css">
+		    p{
+		        padding: 50px;
+		        font-size: 32px;
+		        font-weight: bold;
+		        text-align: center;
+		        background: #f2f2f2;
+		    }
+		</style>
 	</head>
 
 	<body>
